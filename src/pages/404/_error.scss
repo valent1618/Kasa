@@ -1,3 +1,38 @@
 #Error {
-  
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+
+  .container {
+    text-align: center;
+
+    h1 {
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 65px;
+    }
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 500;
+    color: $colour-primary;
+  }
+
+  @media screen and (max-width: $break-phone) {
+    gap: 130px;
+    
+    .container h1 {
+      font-size: 96px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
 }
