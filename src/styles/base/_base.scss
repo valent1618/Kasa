@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $colour-primary;
 }
 
 code {
@@ -17,13 +18,19 @@ code {
 }
 
 main {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 188px);
 }
 
 header, main {
   margin: 40px 100px;
+}
 
-  @media screen and (max-width: $break-phone) {
+@media screen and (max-width: $break-phone) {
+  main {
+    min-height: calc(100vh - 110.4px);
+  }
+
+  header, main {
     margin: 20px;
   }
 }
