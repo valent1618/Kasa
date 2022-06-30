@@ -6,13 +6,14 @@
 @import "./base/base";
 
 /* - Components - */
+@import "../components/AccommodationCard/style";
 
 /* - Layouts - */
-@import "../layouts/Header/header";
-@import "../layouts/Footer/footer";
+@import "../layouts/Header/style";
+@import "../layouts/Footer/style";
 
 /* - Pages - */
-@import "../pages/Home/home";
-@import "../pages/About/about";
-@import "../pages/Accommodation/accommodation";
-@import "../pages/404/error";
+@import "../pages/Home/style";
+@import "../pages/About/style";
+@import "../pages/Accommodation/style";
+@import "../pages/404/style";
