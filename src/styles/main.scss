@@ -1,0 +1,18 @@
+/* - Utils - */
+@import "./utils/variables";
+
+/* - Base - */
+@import "./base/typography";
+@import "./base/base";
+
+/* - Components - */
+
+/* - Layouts - */
+@import "../layouts/Header/header";
+@import "../layouts/Footer/footer";
+
+/* - Pages - */
+@import "../pages/Home/home";
+@import "../pages/About/about";
+@import "../pages/Accommodation/accommodation";
+@import "../pages/404/error";
