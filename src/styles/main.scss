@@ -2,11 +2,14 @@
 @import "./utils/variables";
 
 /* - Base - */
+@import "./base/animations";
 @import "./base/typography";
 @import "./base/base";
 
 /* - Components - */
 @import "../components/AccommodationCard/style";
+@import "../components/Gallery/style";
+@import "../components/Tag/style";
 
 /* - Layouts - */
 @import "../layouts/Header/style";
