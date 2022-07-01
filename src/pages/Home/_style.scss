@@ -1,4 +1,5 @@
 #Home {
+  animation: 1s appear;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -46,6 +47,7 @@
       .accommodations {
         background-color: transparent;
         padding: 0;
+        grid-template-columns: 100%;
         gap: 20px;
       }
   }
