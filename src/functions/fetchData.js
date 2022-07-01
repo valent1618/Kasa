@@ -1,5 +1,5 @@
-function fetchData(setData) {
-  fetch('accommodations.json', {
+function fetchData(setData, filterId = false) {
+  fetch('/accommodations.json', {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
@@ -9,7 +9,9 @@ function fetchData(setData) {
       return response.json();
     })
     .then((json) => {
-      setData(json);
+      filterId
+        ? setData(json.filter((data) => data.id === filterId)[0])
+        : setData(json);
     });
 }
 
