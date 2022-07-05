@@ -1,17 +1,16 @@
 #Home {
-  animation: 1s appear;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 45px;
-  
+
   .intro {
-    background: rgba($color: #000000, $alpha: 0.3) url('../../assets/sea-mountain.jpg');
+    background: rgba($color: #000000, $alpha: 0.3)
+      url('../../assets/sea-mountain.jpg');
     background-blend-mode: darken;
     background-size: cover;
     background-position: center;
     border-radius: $radius-big;
-    width: 100%;
     padding: 80px;
     text-align: center;
     color: white;
@@ -25,30 +24,31 @@
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 60px;
   }
-  
+
   @media screen and (max-width: $break-phone) {
-      margin-top: 0;
-      gap: 25px;
+    margin-top: 0;
+    gap: 25px;
 
-      .intro {
-        background: rgba($color: #000000, $alpha: 0.3) url('../../assets/sea-mountain-mobile.jpg');
-        background-size: cover;
-        background-position: right;
-        border-radius: $radius;
-        padding: 30px 15px;
-        text-align: left;
+    .intro {
+      background: rgba($color: #000000, $alpha: 0.3)
+        url('../../assets/sea-mountain-mobile.jpg');
+      background-size: cover;
+      background-position: right;
+      border-radius: $radius;
+      padding: 30px 15px;
+      text-align: left;
 
-        h1 {
-          display: flex;
-          flex-direction: column;
-        }
+      h1 {
+        display: flex;
+        flex-direction: column;
       }
+    }
 
-      .accommodations {
-        background-color: transparent;
-        padding: 0;
-        grid-template-columns: 100%;
-        gap: 20px;
-      }
+    .accommodations {
+      background-color: transparent;
+      padding: 0;
+      grid-template-columns: 100%;
+      gap: 20px;
+    }
   }
 }

@@ -4,9 +4,9 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $colour-primary;
@@ -23,10 +23,12 @@ code {
 }
 
 main {
+  animation: 0.4s appear;
   min-height: calc(100vh - 188px);
 }
 
-header, main {
+header,
+main {
   margin: 40px 100px;
 }
 
@@ -35,7 +37,8 @@ header, main {
     min-height: calc(100vh - 110.4px);
   }
 
-  header, main {
+  header,
+  main {
     margin: 20px;
   }
 }

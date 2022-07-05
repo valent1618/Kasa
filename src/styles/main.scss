@@ -1,22 +1,23 @@
 /* - Utils - */
-@import "./utils/variables";
+@import './utils/variables';
 
 /* - Base - */
-@import "./base/animations";
-@import "./base/typography";
-@import "./base/base";
+@import './base/animations';
+@import './base/typography';
+@import './base/base';
 
 /* - Components - */
-@import "../components/AccommodationCard/style";
-@import "../components/Gallery/style";
-@import "../components/Tag/style";
+@import '../components/AccommodationCard/style';
+@import '../components/Gallery/style';
+@import '../components/Tag/style';
+@import '../components/Collapse/style';
 
 /* - Layouts - */
-@import "../layouts/Header/style";
-@import "../layouts/Footer/style";
+@import '../layouts/Header/style';
+@import '../layouts/Footer/style';
 
 /* - Pages - */
-@import "../pages/Home/style";
-@import "../pages/About/style";
-@import "../pages/Accommodation/style";
-@import "../pages/404/style";
+@import '../pages/Home/style';
+@import '../pages/About/style';
+@import '../pages/Accommodation/style';
+@import '../pages/404/style';
