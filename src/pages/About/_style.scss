@@ -1,3 +1,42 @@
 #About {
-  animation: 1s appear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  .intro {
+    background: rgba($color: #000000, $alpha: 0.3)
+      url('../../assets/mountain.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    border-radius: $radius-big;
+    width: 100%;
+    height: 223px;
+    text-align: center;
+    color: white;
+  }
+
+  .about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: $break-phone) {
+    gap: 20px;
+
+    .intro {
+      background: rgba($color: #000000, $alpha: 0.3)
+        url('../../assets/mountain-mobile.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .about {
+      width: 100%;
+      gap: 20px;
+    }
+  }
 }
