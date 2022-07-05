@@ -1,0 +1,84 @@
+.collapse {
+  max-height: 25em;
+
+  .collapse-header {
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background-color: $colour-primary;
+    margin-bottom: -15px;
+    padding: 18px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .collapse-body {
+    background-color: $colour-secondary;
+    padding: 40px 15px 20px 20px;
+    transform-origin: top;
+  }
+
+  .collapse-header,
+  .collapse-body {
+    border-radius: $radius;
+  }
+
+  &.about-collapse {
+    max-height: 15em;
+
+    .collapse-body {
+      padding: 35px 18px 20px 18px;
+    }
+
+    .collapse-header,
+    .collapse-body {
+      border-radius: $radius-min;
+    }
+
+    &.collapsed {
+      max-height: 4em;
+    }
+  }
+
+  &.collapsed {
+    max-height: 3em;
+
+    .collapse-body {
+      transform: scaleY(0);
+
+      p {
+        opacity: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: $break-phone) {
+    max-height: 17em;
+
+    .collapse-header {
+      padding: 12px;
+
+      svg {
+        width: 16px;
+        height: 10px;
+      }
+    }
+
+    .collapse-body,
+    &.about-collapse .collapse-body {
+      padding: 25px 7px 10px 10px;
+    }
+
+    .collapse-header,
+    .collapse-body {
+      border-radius: $radius-min;
+    }
+
+    &.collapsed,
+    &.about-collapse.collapsed {
+      max-height: 2.5em;
+    }
+  }
+}
