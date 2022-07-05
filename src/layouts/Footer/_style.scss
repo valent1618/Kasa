@@ -1,25 +1,30 @@
 #Footer {
-    background-color: black;
-    width: 100%;
-    min-height: 200px;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    gap: 35px;
-    color: white;
+  background-color: black;
+  width: 100%;
+  min-height: 200px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap: 35px;
+  color: white;
 
-    svg {
-        width: auto;
-        max-height: 40px;
-        
-        path {
-            fill: white;
-        }
-    }
+  svg {
+    width: auto;
+    max-height: 40px;
 
-    h3 {
-        margin: 0;
+    path {
+      fill: white;
     }
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $break-phone) {
+    justify-content: center;
+    gap: 30px;
+  }
 }
