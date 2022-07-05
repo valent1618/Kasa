@@ -1,5 +1,4 @@
 #Accommodation {
-  animation: 1s appear;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -16,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
 
     .info-accommodation {
       display: flex;
@@ -33,12 +33,12 @@
       flex-direction: column;
       align-items: flex-end;
       gap: 25px;
-    
+
       .host {
         display: flex;
         align-items: center;
         gap: 10px;
-  
+
         h4 {
           text-align: right;
         }
@@ -54,6 +54,57 @@
       .rating {
         display: flex;
         gap: 10px;
+      }
+    }
+  }
+
+  .collapses {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+
+    .collapse {
+      width: 47%;
+    }
+  }
+
+  @media screen and (max-width: $break-phone) {
+    gap: 15px;
+
+    .gallery-section {
+      height: 255px;
+      border-radius: $radius;
+    }
+
+    .info {
+      flex-direction: column;
+      align-items: unset;
+
+      .info-host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        .host {
+          img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .rating svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+
+    .collapses {
+      flex-direction: column;
+      gap: 20px;
+
+      .collapse {
+        width: 100%;
       }
     }
   }
