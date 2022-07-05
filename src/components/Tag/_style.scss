@@ -6,4 +6,10 @@
   padding: 7px 15px;
   color: white;
   text-align: center;
+
+  @media screen and (max-width: $break-phone) {
+    min-width: 84px;
+    min-height: 18px;
+    border-radius: $radius-min;
+  }
 }
