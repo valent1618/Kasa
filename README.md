@@ -5,6 +5,16 @@
 Kasa is a fake web platform for renting apartments between individuals in France.
 Coded with React.
 
+> This is the eleventh project of the formation "Développeur d'application - JavaScript React" - OpenClassrooms
+
+### Mockup
+
+<https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design?node-id=4%3A1>
+
+### Demo
+
+<https://valent1618.github.io/Kasa/>
+
 ## Available Scripts
 
 In the project directory, you can run:
