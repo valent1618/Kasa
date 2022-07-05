@@ -22,7 +22,7 @@
     }
 
     &:hover {
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -52,7 +52,7 @@
   }
 
   img {
-    transition: opacity 1s, transform 5s ease-out;
+    transition: opacity 1s, transform 6s ease-out;
     position: absolute;
     left: 0;
     opacity: 0;
@@ -64,5 +64,27 @@
   .activeImg {
     opacity: 1;
     transform: scale(1.1);
+  }
+
+  .aloneImg {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: $break-phone) {
+    .arrow-container {
+      width: 37.5px;
+      height: 50px;
+
+      .arrow {
+        width: 25px;
+        height: 25px;
+        border: 0 solid white;
+        border-width: 5px 0 0 5px;
+      }
+    }
+
+    h4 {
+      display: none;
+    }
   }
 }
