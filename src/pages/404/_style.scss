@@ -1,5 +1,4 @@
 #Error {
-  animation: 1s appear;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -9,9 +8,9 @@
   text-align: center;
 
   h1 {
-      font-size: 288px;
-      font-weight: 700;
-      line-height: 1;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 1;
   }
 
   a {
@@ -23,7 +22,7 @@
 
   @media screen and (max-width: $break-phone) {
     gap: 10px;
-    
+
     h1 {
       font-size: 96px;
     }

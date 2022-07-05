@@ -1,42 +1,42 @@
 #Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 50px;
-    
+
+    a {
+      white-space: nowrap;
+      font-size: 24px;
+      font-weight: 500;
+      color: $colour-primary;
+      text-decoration: none;
+    }
+
+    .active {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: $break-phone) {
+    svg {
+      width: auto;
+      max-height: 47px;
+    }
+
     nav ul {
-        list-style-type: none;
-        padding-left: 0;
-        display: flex;
-        align-items: center;
-        gap: 50px;
+      gap: 10px;
 
-        a {
-            white-space: nowrap;
-            font-size: 24px;
-            font-weight: 500;
-            color: $colour-primary;
-            text-decoration: none;
-        }
-
-        .active {
-            text-decoration: underline;
-        }
+      a {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
     }
-
-    @media screen and (max-width: $break-phone) {
-        svg {
-            width: auto;
-            max-height: 47px;
-        }
-
-        nav ul {
-            gap: 10px;
-    
-            a {
-                font-size: 12px;
-                text-transform: uppercase;
-            }
-        }
-    }
+  }
 }
