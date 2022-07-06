@@ -7,6 +7,8 @@
 @import './base/base';
 
 /* - Components - */
+@import '../components/Loader/style';
+@import '../components/LoaderCard/style';
 @import '../components/AccommodationCard/style';
 @import '../components/Gallery/style';
 @import '../components/Tag/style';
