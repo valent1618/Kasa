@@ -3,16 +3,18 @@ import { Link } from 'react-router-dom';
 
 import fetchData from '../../functions/fetchData';
 
+import LoaderCard from '../../components/LoaderCard';
 import AccommodationCard from '../../components/AccommodationCard';
 
 function Home() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState('loading');
 
   useEffect(() => {
     fetchData(setData);
   }, []);
 
-  if (data === undefined || data.length === 0) {
+  if (data === undefined) {
+    // if data has some issues, returns an error
     return (
       <main id='Error'>
         <h1>404</h1>
@@ -24,6 +26,7 @@ function Home() {
       </main>
     );
   } else {
+    // returns home page with preloaded cards until fetch is complete
     return (
       <main id='Home'>
         <section className='intro'>
@@ -33,13 +36,17 @@ function Home() {
           </h1>
         </section>
         <section className='accommodations'>
-          {data.map((accommodation) => (
-            <AccommodationCard
-              key={`accommodation-${accommodation.id}`}
-              to={`/Kasa/accommodation/${accommodation.id}`}
-              accommodation={accommodation}
-            />
-          ))}
+          {data === 'loading'
+            ? [...Array(9).keys()].map((index) => (
+                <LoaderCard key={`LoaderCard-${index}`} />
+              ))
+            : data.map((accommodation) => (
+                <AccommodationCard
+                  key={`accommodation-${accommodation.id}`}
+                  to={`/Kasa/accommodation/${accommodation.id}`}
+                  accommodation={accommodation}
+                />
+              ))}
         </section>
       </main>
     );

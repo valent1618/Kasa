@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 import fetchData from '../../functions/fetchData';
 
+import Loader from '../../components/Loader';
 import Gallery from '../../components/Gallery';
 import Tag from '../../components/Tag';
 import Collapse from '../../components/Collapse';
@@ -12,19 +13,27 @@ import Star from '../../assets/star';
 function Accommodation() {
   const { id } = useParams();
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState('loading');
 
   useEffect(() => {
     window.scrollTo(0, 0);
     fetchData(setData, id);
   }, [id]);
 
-  if (data === undefined || data.length === 0) {
+  if (data === undefined) {
+    // if data has some issues, returns an error
     return (
       <main id='Error'>
         <h1>404</h1>
         <h2>Oups! Nous ne trouvons pas le logement que vous cherchez.</h2>
         <Link to='/Kasa'>Retourner sur la page d'accueil</Link>
+      </main>
+    );
+  } else if (data === 'loading') {
+    // returns loader until fetch is complete
+    return (
+      <main className='main-loading'>
+        <Loader />
       </main>
     );
   } else {
