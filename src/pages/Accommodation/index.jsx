@@ -24,7 +24,7 @@ function Accommodation() {
       <main id='Error'>
         <h1>404</h1>
         <h2>Oups! Nous ne trouvons pas le logement que vous cherchez.</h2>
-        <Link to='/'>Retourner sur la page d'accueil</Link>
+        <Link to='/Kasa'>Retourner sur la page d'accueil</Link>
       </main>
     );
   } else {

@@ -20,7 +20,7 @@ function Home() {
           Oups! Nous ne trouvons plus les logements. Nous nous chargeons de
           résoudre ce problème au plus vite.
         </h2>
-        <Link to='/about'>Voir la page à propos</Link>
+        <Link to='/Kasa/about'>Voir la page à propos</Link>
       </main>
     );
   } else {
@@ -36,7 +36,7 @@ function Home() {
           {data.map((accommodation) => (
             <AccommodationCard
               key={`accommodation-${accommodation.id}`}
-              to={`/accommodation/${accommodation.id}`}
+              to={`/Kasa/accommodation/${accommodation.id}`}
               accommodation={accommodation}
             />
           ))}
