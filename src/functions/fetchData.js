@@ -1,5 +1,5 @@
 function fetchData(setData, filterId = false) {
-  fetch('/accommodations.json', {
+  fetch('/Kasa/accommodations.json', {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
