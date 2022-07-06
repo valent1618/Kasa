@@ -23,6 +23,7 @@ code {
 }
 
 main {
+  transition: 0s;
   animation: 0.4s appear;
   min-height: calc(100vh - 188px);
 }
