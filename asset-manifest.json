@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Kasa/static/css/main.f721cad4.css",
+    "main.js": "/Kasa/static/js/main.efe4ca74.js",
+    "static/js/787.0ce615c0.chunk.js": "/Kasa/static/js/787.0ce615c0.chunk.js",
+    "static/media/mountain.jpg": "/Kasa/static/media/mountain.24bc0c3f1c2da4ffaa09.jpg",
+    "static/media/sea-mountain.jpg": "/Kasa/static/media/sea-mountain.fa1f2f9d2d2a3ad6eeb3.jpg",
+    "static/media/mountain-mobile.jpg": "/Kasa/static/media/mountain-mobile.6af12a61d590975944a7.jpg",
+    "static/media/sea-mountain-mobile.jpg": "/Kasa/static/media/sea-mountain-mobile.ebf0272bc03ae0bae71f.jpg",
+    "index.html": "/Kasa/index.html",
+    "main.f721cad4.css.map": "/Kasa/static/css/main.f721cad4.css.map",
+    "main.efe4ca74.js.map": "/Kasa/static/js/main.efe4ca74.js.map",
+    "787.0ce615c0.chunk.js.map": "/Kasa/static/js/787.0ce615c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f721cad4.css",
+    "static/js/main.efe4ca74.js"
+  ]
+}
