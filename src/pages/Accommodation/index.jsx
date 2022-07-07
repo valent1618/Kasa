@@ -1,8 +1,9 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import fetchData from '../../functions/fetchData';
 
+import Error from '../404';
 import Loader from '../../components/Loader';
 import Gallery from '../../components/Gallery';
 import Tag from '../../components/Tag';
@@ -22,13 +23,7 @@ function Accommodation() {
 
   if (data === undefined) {
     // if data has some issues, returns an error
-    return (
-      <main id='Error'>
-        <h1>404</h1>
-        <h2>Oups! Nous ne trouvons pas le logement que vous cherchez.</h2>
-        <Link to='/Kasa'>Retourner sur la page d'accueil</Link>
-      </main>
-    );
+    return <Error error='accommodation' />;
   } else if (data === 'loading') {
     // returns loader until fetch is complete
     return (

@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 import fetchData from '../../functions/fetchData';
 
+import Error from '../404';
 import LoaderCard from '../../components/LoaderCard';
 import AccommodationCard from '../../components/AccommodationCard';
 
@@ -15,16 +15,7 @@ function Home() {
 
   if (data === undefined) {
     // if data has some issues, returns an error
-    return (
-      <main id='Error'>
-        <h1>404</h1>
-        <h2>
-          Oups! Nous ne trouvons plus les logements. Nous nous chargeons de
-          résoudre ce problème au plus vite.
-        </h2>
-        <Link to='/Kasa/about'>Voir la page à propos</Link>
-      </main>
-    );
+    return <Error error='home' />;
   } else {
     // returns home page with preloaded cards until fetch is complete
     return (
@@ -43,7 +34,6 @@ function Home() {
             : data.map((accommodation) => (
                 <AccommodationCard
                   key={`accommodation-${accommodation.id}`}
-                  to={`/Kasa/accommodation/${accommodation.id}`}
                   accommodation={accommodation}
                 />
               ))}
