@@ -12,6 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    &:hover {
+      transform: scale(1.02);
+    }
   }
 
   .collapse-body {
