@@ -12,6 +12,10 @@ function fetchData(setData, filterId = false) {
       filterId
         ? setData(json.filter((data) => data.id === filterId)[0])
         : setData(json);
+    })
+    .catch((error) => {
+      console.log('Error with fetch accommodations =>', error);
+      setData(undefined);
     });
 }
 
