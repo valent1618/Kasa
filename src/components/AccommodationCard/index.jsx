@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function AccommodationCard({ accommodation }) {
   return (
     <Link
-      to={`accommodation/${accommodation.id}`}
+      to={`/Kasa/accommodation/${accommodation.id}`}
       className='accommodation-card'
     >
       <img src={accommodation.cover} alt={accommodation.title}></img>
