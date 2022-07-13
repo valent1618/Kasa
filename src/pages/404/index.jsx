@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Error({ error = '404' }) {
+function Error({ error = 'page' }) {
   return (
     <main id='Error'>
       <h1>404</h1>
@@ -17,7 +17,7 @@ function Error({ error = '404' }) {
       {error === 'home' ? (
         <Link to='/Kasa/about'>Voir la page à propos</Link>
       ) : (
-        <Link to='/Kasa'>Retourner sur la page d'accueil</Link>
+        <Link to='/Kasa/'>Retourner sur la page d'accueil</Link>
       )}
     </main>
   );
