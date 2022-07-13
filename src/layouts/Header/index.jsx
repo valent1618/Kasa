@@ -9,7 +9,7 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink exact to='/Kasa/'>
+            <NavLink exact='true' to='/Kasa/'>
               Accueil
             </NavLink>
           </li>
