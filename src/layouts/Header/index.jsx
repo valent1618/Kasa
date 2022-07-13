@@ -9,14 +9,12 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink exact='true' activeclassname='active' to='/Kasa/'>
+            <NavLink exact to='/Kasa/'>
               Accueil
             </NavLink>
           </li>
           <li>
-            <NavLink activeclassname='active' to='/Kasa/about'>
-              A Propos
-            </NavLink>
+            <NavLink to='/Kasa/about'>A Propos</NavLink>
           </li>
         </ul>
       </nav>
